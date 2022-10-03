@@ -37,7 +37,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-vilmaturesso-testhubapi-abtxr7lm6wq.ws-eu64.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['https://8000-vilmaturesso-testhubapi-abtxr7lm6wq.ws-eu69.gitpod.io']
 # Application definition
 
 INSTALLED_APPS = [
