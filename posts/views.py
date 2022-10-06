@@ -13,7 +13,7 @@ class PostList(APIView):
         """
         function 
         """
-        posts = Post.object.all()
+        posts = Post.objects.all()
         serializer = PostSerializer(
             posts, many=True, context={'request': request}
         )
