@@ -1,7 +1,7 @@
 from rest_framework import generics, permissions
 from testhub_api.permissions import IsOwnerOrReadOnly
 from .models import Comment
-from .Serializers import CommentSerializer
+from .serializers import CommentSerializer
 
 
 class CommentsList(generics.ListCreateAPIView):
