@@ -35,9 +35,9 @@ SECRET_KEY = 'django-insecure-f#coqpm#qqcpg&mb@pw8x6yoxt5ia^u!hk9qpisu=b9b_+16t7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost']
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-vilmaturesso-testhubapi-abtxr7lm6wq.ws-eu70.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['https://8000-vilmaturesso-testhubapi-abtxr7lm6wq.ws-eu71.gitpod.io']
 # Application definition
 
 INSTALLED_APPS = [
@@ -53,6 +53,7 @@ INSTALLED_APPS = [
 
     'profiles',
     'posts',
+    'comments'
 ]
 
 MIDDLEWARE = [
