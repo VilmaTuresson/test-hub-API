@@ -1,7 +1,7 @@
 from rest_framework import generics, permissions
 from testhub_api.permissions import IsOwnerOrReadOnly
 from .models import Comment
-from .serializers import CommentSerializer
+from .serializers import CommentSerializer, CommentDetailSerializer
 
 
 class CommentsList(generics.ListCreateAPIView):
@@ -14,3 +14,11 @@ class CommentsList(generics.ListCreateAPIView):
 
     def perform_create(self, serializer):
         serializer.save(owner=self.request.user)
+
+class CommentDetails(generics.RetrieveDestroyAPIView):
+    """
+    View for retrieving and deleting comment
+    """
+    serializer_class = CommentDetailSerializer
+    permission_classes = [IsOwnerOrReadOnly]
+    queryset = Comment.objects.all()
