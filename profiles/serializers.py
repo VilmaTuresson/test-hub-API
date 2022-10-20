@@ -20,7 +20,7 @@ class ProfileSerializer(serializers.ModelSerializer):
 
     def get_follow_id(self, obj):
         """
-        Function
+        Function for getting followers
         """
         user = self.context['request'].user
         if user.is_authenticated:
