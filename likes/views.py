@@ -21,5 +21,5 @@ class LikeDetail(generics.RetrieveDestroyAPIView):
     View to retrieve and delete a like
     """
     serializer_class = LikeSerializer
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+    permission_classes = [IsOwnerOrReadOnly]
     queryset = Like.objects.all()
