@@ -28,6 +28,7 @@
       "allauth",
       "authtoken",
       "cloudinary",
+      "corsheaders",
       "socialaccount",
       "testhub"
    ]
