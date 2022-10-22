@@ -63,7 +63,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = 'DEV' in os.environ
 
 ALLOWED_HOSTS = [
-    'testhub-api.herokuapp.com',
+    os.environ.get('ALLOWED_HOSTS'),
     'localhost'
 ]
 
