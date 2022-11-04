@@ -30,6 +30,7 @@
       "cloudinary",
       "corsheaders",
       "socialaccount",
-      "testhub"
+      "testhub",
+      "whitenoise"
    ]
 }
