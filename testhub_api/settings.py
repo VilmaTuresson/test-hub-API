@@ -79,7 +79,7 @@ if 'CLIENT_ORIGIN' in os.environ:
             rf"{extracted_url}(eu|us)\d+\w\.gitpod\.io$",
         ]
 
-CORS_ALLOWED_CREDENTIALS = True
+CORS_ALLOW_CREDENTIALS = True
 
 INSTALLED_APPS = [
     'django.contrib.admin',
