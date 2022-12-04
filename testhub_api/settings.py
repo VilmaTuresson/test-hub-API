@@ -68,7 +68,7 @@ ALLOWED_HOSTS = [
     'localhost'
 ]
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-vilmaturesso-testhubapi-abtxr7lm6wq.ws-eu71.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['https://8000-vilmaturesso-testhubapi-abtxr7lm6wq.ws-eu77.gitpod.io']
 # Application definition
 
 if 'CLIENT_ORIGIN' in os.environ:
@@ -99,6 +99,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'dj_rest_auth.registration',
     'corsheaders',
+    'django_filters',
 
     'profiles',
     'posts',

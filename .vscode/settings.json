@@ -29,6 +29,7 @@
       "authtoken",
       "cloudinary",
       "corsheaders",
+      "filterset",
       "socialaccount",
       "testhub",
       "whitenoise"
