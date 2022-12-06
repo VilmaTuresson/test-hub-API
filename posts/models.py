@@ -11,9 +11,6 @@ class Post(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     title = models.CharField(max_length=255)
     content = models.TextField(max_length=2000)
-    link = models.URLField(
-        db_index=True, blank=True
-    )
     image = models.ImageField(
         upload_to='images/', default='../default_post_jshpia.jpg'
     )
