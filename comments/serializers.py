@@ -25,7 +25,7 @@ class CommentSerializer(serializers.ModelSerializer):
         model = Comment
         fields = [
             'id', 'owner', 'created_at', 'content', 'post',
-            'content', 'is_owner', 'profile_id, profile_img'
+            'content', 'is_owner', 'profile_id', 'profile_img'
         ]
 
 
