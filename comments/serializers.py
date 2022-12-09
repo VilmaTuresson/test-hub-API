@@ -15,8 +15,10 @@ class CommentSerializer(serializers.ModelSerializer):
         """
         Function to check comments ownership
         """
-        request = self.context['request']
-        return request.user == obj.owner
+        request = self.context.get('request', None)
+        if request is not None:
+            return request.user == obj.owner
+        return False
 
     class Meta:
         """
